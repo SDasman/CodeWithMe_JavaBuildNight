@@ -12,15 +12,7 @@ public class EvenOddServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        PrintWriter out = response.getWriter();
-        out.println("<HTML>");
-        out.println("<HEAD>");
-        out.println("<TITLE>Servlet Testing</TITLE>");
-        out.println("</HEAD>");
-        out.println("<BODY>");
-        out.println("Getting the Servlet Testing Center");
-        out.println("</BODY>");
-        out.println("</HTML>");
+        this.getServletContext().getRequestDispatcher("/evenodd.jsp").forward(request, response);
     }
 
     @Override
