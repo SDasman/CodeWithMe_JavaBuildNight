@@ -11,7 +11,7 @@ public class EvenOddServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        this.getServletContext().getRequestDispatcher("/evenodd.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
     }
 
     @Override
@@ -33,7 +33,7 @@ public class EvenOddServlet extends HttpServlet {
             request.setAttribute("msg", "Wait just a minute....You tried to trick me!!!");
         }
         
-        this.getServletContext().getRequestDispatcher("/evenodd.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
     }
     
     private boolean isEven(Long number) throws Exception {
