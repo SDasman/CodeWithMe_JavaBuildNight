@@ -1,7 +1,6 @@
 package com.codewithme.javabuildnight;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Objects;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
