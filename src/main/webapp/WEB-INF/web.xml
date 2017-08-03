@@ -8,8 +8,17 @@
       <servlet-name>EvenOdd</servlet-name>
       <servlet-class>com.codewithme.javabuildnight.EvenOddServlet</servlet-class>
   </servlet>
+  <servlet>
+      <servlet-name>DogCatPicker</servlet-name>
+      <servlet-class>com.codewithme.javabuildnight.DogCatPicker</servlet-class>
+  </servlet>
   <servlet-mapping>
       <servlet-name>EvenOdd</servlet-name>
       <url-pattern>/evenodd</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+      <servlet-name>DogCatPicker</servlet-name>
+      <url-pattern>/dogcatpicker</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
